@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ItemDetail: View {
     let item: MenuItem
+    @EnvironmentObject var order: Order // pass order property as EnvironmentObject to make it watch for changes and refresh its UI when change announcement comes through
     var body: some View {
         VStack {
             ZStack(alignment: .bottomTrailing) {
@@ -25,6 +26,10 @@ struct ItemDetail: View {
 
             Text(item.description)
                 .padding()
+            Button("Order this") {
+                order.add(item: item)
+            }
+            .font(.headline)
             Spacer()
         }
         .navigationTitle(item.name)
@@ -35,7 +40,7 @@ struct ItemDetail: View {
 struct ItemDetail_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            ItemDetail(item: MenuItem.example)
+            ItemDetail(item: MenuItem.example).environmentObject(Order()) // for debugging
         }
     }
 }
