@@ -15,7 +15,9 @@ struct ContentView: View {
                 ForEach(menu) { section in
                     Section(header: Text(section.name)) { // get category as a List header
                         ForEach(section.items) { item in
-                            ItemRow(item: item) // creates new ItemRow for each item in section
+                            NavigationLink(destination: ItemDetail(item: item)) { // make the whole row a navigation link with ItemDetail item as destination
+                                ItemRow(item: item) // creates new ItemRow for each item in section
+                            }
                         }
                     }
                 }
