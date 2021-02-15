@@ -15,6 +15,16 @@ struct CheckoutView: View {
     @State private var loyaltyNumber = ""
     let tipAmounts = [10, 15, 20, 25, 0]
     @State private var tipAmount = 15 // add property for storing selected tipAmount
+    // totalPrice is a computed property inside the layout
+    var totalPrice: String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        
+        let total = Double(order.total)
+        let tipValue = total / 100 * Double(tipAmount)
+        
+        return formatter.string(from: NSNumber(value: total + tipValue)) ?? "$0"
+    }
     
     var body: some View {
         Form {
@@ -40,7 +50,9 @@ struct CheckoutView: View {
                 .pickerStyle(SegmentedPickerStyle())
             }
             
-            Section(header: Text("Total: $100")) {
+            Section(header:
+                        Text("Total: \(totalPrice)")
+            ) {
                 Button("Confirm order") {
                     // place order
                 }
