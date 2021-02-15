@@ -8,8 +8,8 @@
 
 import SwiftUI
 
-class Order {
-    var items = [MenuItem]()
+class Order: ObservableObject { // conform to ObservableObject for monitoring change
+    @Published var items = [MenuItem]() // published makes items a property that triggers change notifications immediately when it happens
 
     var total: Int {
         if items.count > 0 {
