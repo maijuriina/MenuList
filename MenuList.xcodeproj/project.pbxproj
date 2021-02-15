@@ -31,6 +31,8 @@
 		79B4575F25DA6BA90001F213 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4575D25DA6BA90001F213 /* OrderView.swift */; };
 		79B4576525DA6D5C0001F213 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4576425DA6D5C0001F213 /* MainView.swift */; };
 		79B4576625DA6D5C0001F213 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4576425DA6D5C0001F213 /* MainView.swift */; };
+		79B4577025DA7D770001F213 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4576F25DA7D770001F213 /* CheckoutView.swift */; };
+		79B4577125DA7D770001F213 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4576F25DA7D770001F213 /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,7 @@
 		79B4575225DA63940001F213 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		79B4575D25DA6BA90001F213 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		79B4576425DA6D5C0001F213 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		79B4576F25DA7D770001F213 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +206,7 @@
 				79B4575225DA63940001F213 /* ItemDetail.swift */,
 				79B4575D25DA6BA90001F213 /* OrderView.swift */,
 				79B4576425DA6D5C0001F213 /* MainView.swift */,
+				79B4576F25DA7D770001F213 /* CheckoutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -368,6 +372,7 @@
 			files = (
 				79B4575325DA63940001F213 /* ItemDetail.swift in Sources */,
 				79B4576525DA6D5C0001F213 /* MainView.swift in Sources */,
+				79B4577025DA7D770001F213 /* CheckoutView.swift in Sources */,
 				79B4575E25DA6BA90001F213 /* OrderView.swift in Sources */,
 				79B4570225DA51A40001F213 /* ContentView.swift in Sources */,
 				79B4570025DA51A40001F213 /* MenuListApp.swift in Sources */,
@@ -384,6 +389,7 @@
 			files = (
 				79B4575425DA63940001F213 /* ItemDetail.swift in Sources */,
 				79B4576625DA6D5C0001F213 /* MainView.swift in Sources */,
+				79B4577125DA7D770001F213 /* CheckoutView.swift in Sources */,
 				79B4575F25DA6BA90001F213 /* OrderView.swift in Sources */,
 				79B4570325DA51A40001F213 /* ContentView.swift in Sources */,
 				79B4570125DA51A40001F213 /* MenuListApp.swift in Sources */,
