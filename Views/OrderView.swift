@@ -21,16 +21,26 @@ struct OrderView: View {
                             Text("$\(item.price)")
                         }
                     }
+                    .onDelete(perform: deleteItems) // calling func in menu items
                 }
                 Section {
                     NavigationLink(destination: CheckoutView()) {
                         Text("Place order")
                     }
                 }
+                .disabled(order.items.isEmpty) // if no items selected, is disabled
             }
             .navigationTitle("Order")
             .listStyle(InsetGroupedListStyle())
+            .toolbar {
+                EditButton() // system default behaviour for editing
+            }
         }
+    }
+    
+    // using an indexSet, deletes those items from order array
+    func deleteItems(at offsets: IndexSet) {
+        order.items.remove(atOffsets: offsets)
     }
 }
 
