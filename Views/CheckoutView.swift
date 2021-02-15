@@ -15,6 +15,7 @@ struct CheckoutView: View {
     @State private var loyaltyNumber = ""
     let tipAmounts = [10, 15, 20, 25, 0]
     @State private var tipAmount = 15 // add property for storing selected tipAmount
+    
     // totalPrice is a computed property inside the layout
     var totalPrice: String {
         let formatter = NumberFormatter()
@@ -25,6 +26,9 @@ struct CheckoutView: View {
         
         return formatter.string(from: NSNumber(value: total + tipValue)) ?? "$0"
     }
+    
+    @State private var showingPaymentAlert = false
+    
     
     var body: some View {
         Form {
@@ -54,12 +58,16 @@ struct CheckoutView: View {
                         Text("Total: \(totalPrice)")
             ) {
                 Button("Confirm order") {
-                    // place order
+                    showingPaymentAlert.toggle()
                 }
             }
         }
         .navigationTitle("Payment")
         .navigationBarTitleDisplayMode(.inline)
+        .alert(isPresented: $showingPaymentAlert) {
+            // when showingPaymentAlert becomes changed, two-way binding knows to show alert or dismiss it
+            Alert(title: Text("Order confirmed"), message: Text("Your total was \(totalPrice) - thank you!"), dismissButton: .default(Text("OK")))
+        }
     }
 }
 
