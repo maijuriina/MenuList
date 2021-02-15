@@ -23,6 +23,8 @@
 		79B4572825DA55470001F213 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4572625DA55470001F213 /* Menu.swift */; };
 		79B4572F25DA55D80001F213 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 79B4572E25DA55D80001F213 /* menu.json */; };
 		79B4573025DA55D80001F213 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 79B4572E25DA55D80001F213 /* menu.json */; };
+		79B4573A25DA59800001F213 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4573925DA597F0001F213 /* ItemRow.swift */; };
+		79B4573B25DA59800001F213 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4573925DA597F0001F213 /* ItemRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,7 @@
 		79B4571F25DA553C0001F213 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		79B4572625DA55470001F213 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		79B4572E25DA55D80001F213 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		79B4573925DA597F0001F213 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,7 @@
 		79B456D125DA51A30001F213 = {
 			isa = PBXGroup;
 			children = (
+				79B4573925DA597F0001F213 /* ItemRow.swift */,
 				79B456D625DA51A30001F213 /* Shared */,
 				79B456E025DA51A30001F213 /* iOS */,
 				79B456E725DA51A30001F213 /* macOS */,
@@ -337,6 +341,7 @@
 				79B4570225DA51A40001F213 /* ContentView.swift in Sources */,
 				79B4570025DA51A40001F213 /* MenuListApp.swift in Sources */,
 				79B4572025DA553C0001F213 /* Order.swift in Sources */,
+				79B4573A25DA59800001F213 /* ItemRow.swift in Sources */,
 				79B4571925DA55220001F213 /* Helper.swift in Sources */,
 				79B4572725DA55470001F213 /* Menu.swift in Sources */,
 			);
@@ -349,6 +354,7 @@
 				79B4570325DA51A40001F213 /* ContentView.swift in Sources */,
 				79B4570125DA51A40001F213 /* MenuListApp.swift in Sources */,
 				79B4572125DA553C0001F213 /* Order.swift in Sources */,
+				79B4573B25DA59800001F213 /* ItemRow.swift in Sources */,
 				79B4571A25DA55220001F213 /* Helper.swift in Sources */,
 				79B4572825DA55470001F213 /* Menu.swift in Sources */,
 			);

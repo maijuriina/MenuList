@@ -15,7 +15,7 @@ struct ContentView: View {
                 ForEach(menu) { section in
                     Section(header: Text(section.name)) { // get category as a List header
                         ForEach(section.items) { item in
-                            Text(item.name)
+                            ItemRow(item: item) // creates new ItemRow for each item in section
                         }
                     }
                 }
